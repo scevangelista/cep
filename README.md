@@ -1,4 +1,4 @@
-## Microserviço CEP - Cidade, Estado e País
+## CEP - Cidade, Estado e País
 ### :gear: In Development :gear:
 
 Microserviço para consulta de Cidades e Estados do Brasil. 
