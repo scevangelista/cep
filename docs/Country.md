@@ -31,15 +31,12 @@ All documentation of API calls about Country module
 * **Success Response:**
 
   * **Code:** 200 <br />
-    **Content:** `[{ code: 1058, name: "Brasil" }]`
+    **Content:** `[{ code: 1058, name: "Brasil", initials: "BR" }]`
 
-    code: {IBGE Code}
-    name: {Country Name}
+    code: {IBGE Code}<br />
+    name: {Country Name}<br />
+    initials: {Country prefix}
  
-* **Error Response:**
-
-  * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : true }`
 
 * **Sample Call:**
 
