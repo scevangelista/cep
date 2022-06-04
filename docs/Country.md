@@ -5,7 +5,7 @@ All documentation of API calls about Country module
 ##
 
 **Show Countries**
-----
+
   Returns json data about all countries in database.
 
 * **URL**

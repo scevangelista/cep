@@ -5,7 +5,7 @@ All documentation of API calls about State module
 ##
 
 **Show States**
-----
+
   Returns json data about all states in database.
 
 * **URL**
@@ -55,7 +55,7 @@ All documentation of API calls about State module
 ##
 
 **Show States of Country code**
-----
+
   Returns json data about all states of Country code in database.
 
 * **URL**
@@ -107,7 +107,7 @@ All documentation of API calls about State module
 ##
 
 **Show State**
-----
+
   Returns json data about single State.
 
 * **URL**
