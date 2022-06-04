@@ -1,0 +1,26 @@
+{
+  "name": "cep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "npx wait-on http://localhost:3500/api/v1/test && jest",
+    "start-dev": "nodemon server",
+    "start": "node server.js &"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.1",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.3",
+    "wait-on": "^6.0.1"
+  }
+}
