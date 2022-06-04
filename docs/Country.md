@@ -2,9 +2,8 @@
 
 All documentation of API calls about Country module
 
-##
 
-**Show Countries**
+### Show Countries
 
   Returns json data about all countries in database.
 
