@@ -1,11 +1,11 @@
-## API Documentation
+## Documentação da API CEP -> Estado
+Endpoints disponíveis para o módulo de Estado
 
-All documentation of API calls about State module
 <br />
 
-### Show States
+### Lista Estados 
 
-  Returns json data about all states in database.
+  Retorna dados em json com uma lista de todos estados cadastrados
 
 * **URL**
 
@@ -15,46 +15,25 @@ All documentation of API calls about State module
 
   v1
 
-* **Method:**
+* **Método:**
 
   `GET`
   
-* **URL Params**
-
-  None
-
-* **Data Params**
-
-  None
-
-* **Success Response:**
+* **Sucesso:**
 
   * **Code:** 200 <br />
-    **Content:** `[{ code: 12, country: 1058, name: "Acre" },{ code: 27, country: 1058, name: "Alagoas" },...]`
+    **Content:** `[{"code":12,"country_code":1058,"name":"Acre","initials":"AC"}, {"code":13,"country_code":1058,"name":"Amazonas","initials":"AM"},...]`
 
-    code: {IBGE State code}<br />
-    country_code: {IBGE Country code of State}<br />
-    name: {State name}<br />
-    initials: {State prefix}
+    code: {Código IBGE do Estado}<br />
+    country_code: {Código IBGE do País}<br />
+    name: {Nome do Estado}<br />
+    initials: {Sigla do Estado}
  
  
-* **Sample Call:**
-
-  ```javascript
-    $.ajax({
-      url: "/api/v1/states",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
-  ```
-
 ##
-### Show States of Country code
+### Lista Estados de um País
 
-  Returns json data about all states of Country code in database.
+  Retorna dados em json com uma lista de todos Estados cadastrados de um País
 
 * **URL**
 
@@ -64,48 +43,31 @@ All documentation of API calls about State module
 
   v1
 
-* **Method:**
+* **Método:**
 
   `GET`
   
-* **URL Params**
+* **Parâmetros da URL:**
 
-  **Required:**
+  **Obrigatório:**
 
-   `code=[integer]`
+   `code=[integer]` Código do País
 
-* **Data Params**
-
-  None
-
-* **Success Response:**
+* **Sucesso:**
 
   * **Code:** 200 <br />
-    **Content:** `[{ code: 12, country: 1058, name: "Acre" },{ code: 27, country: 1058, name: "Alagoas" },...]`
+    **Content:** `[{"code":12,"country_code":1058,"name":"Acre","initials":"AC"}, {"code":13,"country_code":1058,"name":"Amazonas","initials":"AM"},...]`
 
-    code: {IBGE State code}<br />
-    country_code: {IBGE Country code of State}<br />
-    name: {State name}<br />
-    initials: {State prefix}
+    code: {Código IBGE do Estado}<br />
+    country_code: {Código IBGE do País}<br />
+    name: {Nome do Estado}<br />
+    initials: {Sigla do Estado}
  
  
-* **Sample Call:**
-
-  ```javascript
-    $.ajax({
-      url: "/api/v1/states/country/1058",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
-  ```
-
 ##
-### Show State
+### Mostra Estado
 
-  Returns json data about single State.
+  Retorna dados em json de um único Estado
 
 * **URL**
 
@@ -115,40 +77,23 @@ All documentation of API calls about State module
 
   v1
 
-* **Method:**
+* **Método:**
 
   `GET`
   
-* **URL Params**
+* **Parâmetros da URL:**
 
-  **Required:**
+  **Obrigatório:**
 
-   `code=[integer]`
+   `code=[integer]` Código do Estado
 
-* **Data Params**
-
-  None
-
-* **Success Response:**
+* **Sucesso:**
 
   * **Code:** 200 <br />
-    **Content:** `[{ code: 12, country: 1058, name: "Acre" }]`
+    **Content:** `[{"code":12,"country_code":1058,"name":"Acre","initials":"AC"}]`
 
-    code: {IBGE State code}<br />
-    country_code: {IBGE Country code of State}<br />
-    name: {State name}<br />
-    initials: {State prefix}
+    code: {Código IBGE do Estado}<br />
+    country_code: {Código IBGE do País}<br />
+    name: {Nome do Estado}<br />
+    initials: {Sigla do Estado}
  
- 
-* **Sample Call:**
-
-  ```javascript
-    $.ajax({
-      url: "/api/v1/states/12",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
-  ```

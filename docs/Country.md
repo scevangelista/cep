@@ -1,11 +1,11 @@
-## API Documentation
+## Documentação da API CEP -> País
+Endpoints disponíveis para o módulo de País
 
-All documentation of API calls about Country module
 <br />
 
-### Show Countries
+### Lista Países 
 
-  Returns json data about all countries in database.
+  Retorna dados em json com uma lista de todos países cadastrados
 
 * **URL**
 
@@ -15,37 +15,47 @@ All documentation of API calls about Country module
 
   v1
 
-* **Method:**
+* **Método:**
 
   `GET`
   
-* **URL Params**
-
-  None
-
-* **Data Params**
-
-  None
-
-* **Success Response:**
+* **Sucesso:**
 
   * **Code:** 200 <br />
     **Content:** `[{ code: 1058, name: "Brasil", initials: "BR" }]`
 
-    code: {IBGE Code}<br />
-    name: {Country Name}<br />
-    initials: {Country prefix}
- 
+    code: {Código IBGE do País}<br />
+    name: {Nome do País}<br />
+    initials: {Sigla do País}
 
-* **Sample Call:**
+##
+### Mostra País
 
-  ```javascript
-    $.ajax({
-      url: "/api/v1/countries",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
-  ```
+  Retorna dados em json de um único País
+
+* **URL**
+
+  /api/{version}/countries/:code
+
+* **Version:**
+
+  v1
+
+* **Método:**
+
+  `GET`
+  
+* **Parâmetros da URL:**
+
+  **Obrigatório:**
+
+   `code=[integer]` Código do País
+
+* **Sucesso:**
+
+  * **Code:** 200 <br />
+    **Content:** `[{ code: 1058, name: "Brasil", initials: "BR" }]`
+
+    code: {Código IBGE do País}<br />
+    name: {Nome do País}<br />
+    initials: {Sigla do País}
