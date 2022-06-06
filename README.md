@@ -1,5 +1,5 @@
 ## CEP - Cidade, Estado e País
-### :gear: Em desenvolvimento :gear:
+### :gear: Versão Beta :gear:
 
 Microserviço para consulta de Cidades e Estados do Brasil. 
 Projeto desenvolvido com o intuito de centralizar as informações de nomes e códigos de cidades brasileiras em sistemas distribuídos, garantindo integridade em cadastros que utilizam cidades e/ou estados.
@@ -14,18 +14,18 @@ Projeto desenvolvido com o intuito de centralizar as informações de nomes e c�
 - Docker e docker-compose
 
 **Instruções para executar:**
-- Primeiro, clone o repositório para um diretório de sua preferencia:
+- Primeiro, clone o repositório para um diretório de sua preferência:
 ```
 $ git clone https://github.com/scevangelista/CEP.git
 ```
 
-- Segundo, execute o docker-compose build para o projeto baixar as dependências
+- Segundo, execute o docker-compose build para o docker gerar a imagem e baixar as dependências
 ```
 $ cd CEP
 $ docker-compose build
 ```
 
-- Por último, execute o docker-compose start para iniciar os containers de banco de dados e da aplicação
+- Por último, execute o docker-compose start para iniciar o container de banco de dados e o de aplicação
 ```
 $ docker-compose start
 ```
