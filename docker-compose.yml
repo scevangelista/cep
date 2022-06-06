@@ -1,0 +1,27 @@
+version: "3.1"
+services:
+    db:
+        image: mysql:8.0
+        ports:
+        - "3306:3306"
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_ROOT_PASSWORD: password
+        volumes:
+        - ./mysql/lib/:/var/lib/mysql
+        - ./sql/database.sql:/docker-entrypoint-initdb.d/database.sql
+        networks:
+        - default    
+    cep:
+        build: .
+        ports:
+        - "3500:3500"
+        restart: always
+        depends_on:
+        - db
+        links:
+        - db
+        networks:
+        - default
+volumes:
+    persitent:
