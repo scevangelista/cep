@@ -45,6 +45,9 @@ jobs:
 
   docker:
     name: Docker CI
+
+    needs: node
+
     runs-on: ubuntu-latest
 
     steps:
