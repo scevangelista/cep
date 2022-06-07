@@ -41,5 +41,9 @@ http://ip_of_docker_server:3500
 ##
 ### Changelog: :clipboard:
 
+**1.0.1** (2022-06-07)
+- Correção no sql para criação do banco de dados
+- Correção no docker-compose.yml - MySQL Charset
+
 **1.0.0** (2022-06-06)
 - Initial Version
