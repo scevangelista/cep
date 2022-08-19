@@ -30,7 +30,7 @@ $ docker-compose build
 $ docker-compose start
 ```
 
-- Acesse a API pela porta 3500
+- Acesse a API pela porta 3500  
 http://ip_of_docker_server:3500
 
 ##
