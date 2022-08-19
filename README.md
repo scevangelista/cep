@@ -39,6 +39,12 @@ http://ip_of_docker_server:3500
 [Acessar Documentação](https://github.com/scevangelista/CEP/tree/main/docs)
 
 ##
+### Exemplos de uso: :rocket:
+
+[Classe PHP](https://github.com/scevangelista/CEP-Cliente-PHP)  
+[Harbour](https://github.com/scevangelista/CEP-Cliente-xHarbour)
+
+##
 ### Changelog: :clipboard:
 
 **1.0.1** (2022-06-07)
