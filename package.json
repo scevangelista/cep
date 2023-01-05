@@ -8,7 +8,7 @@
     "start-dev": "nodemon server",
     "start": "node server.js &"
   },
-  "keywords": [],
+  "keywords": ["cep","Brazil","address","cities","states","country"],
   "author": "",
   "license": "ISC",
   "dependencies": {
